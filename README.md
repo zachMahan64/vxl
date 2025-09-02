@@ -1,6 +1,11 @@
 ![VXL](logo1-quant.gif)
 # Build the v1.18.0 Patch
 - `git clone --branch v1.18.0-patch --single-branch https://github.com/zachMahan64/vxl.git`
+- Required for building contrib package in VXL:
+    - Fedora: `sudo dnf install libgeotiff-devel`
+    - Ubuntu/Debian: `sudo apt install libgeotiff-dev`
+    - Arch: `sudo pacman -S libgeotiff`
+    - MacOS: `brew install libgeotiff`
 - `mkdir build && cd build`
 ```
 cmake .. \        
