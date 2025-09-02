@@ -1,7 +1,7 @@
 ![VXL](logo1-quant.gif)
 # Build the v1.18.0 Patch
-`git clone --branch v1.18.0-patch --single-branch https://github.com/zachMahan64/vxl.git`
-`mkdir build && cd build`
+- `git clone --branch v1.18.0-patch --single-branch https://github.com/zachMahan64/vxl.git`
+- `mkdir build && cd build`
 ```
 cmake .. \        
   -DCMAKE_BUILD_TYPE=Release \
@@ -17,7 +17,7 @@ cmake .. \
   -DCMAKE_CXX_STANDARD=98 \
   -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++
 ```
-`make -k -j$(nproc)`
+- `make -k -j$(nproc)`
 
 ## Introduction: What is VXL?
 VXL (the Vision-something-Libraries) is a collection of C++ libraries designed for computer vision research and implementation. It was created from TargetJr and the IUE with the aim of making a light, fast and consistent system. VXL is written in ANSI/ISO C++ and is designed to be portable over many platforms. The core libraries in VXL are:
