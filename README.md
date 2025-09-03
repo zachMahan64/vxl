@@ -22,7 +22,9 @@ cmake .. \
   -DCMAKE_CXX_STANDARD=98 \
   -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++
 ```
+- ^ if building on MacOS, try adding `-DCMAKE_POLICY_VERSION_MINIMUM=3.5` if CMake config fails
 - `make -k -j$(nproc)`
+- if building on MacOS, try adding `-i` flag to force VXL build through stricter Apple Clang compilation
 
 ## Introduction: What is VXL?
 VXL (the Vision-something-Libraries) is a collection of C++ libraries designed for computer vision research and implementation. It was created from TargetJr and the IUE with the aim of making a light, fast and consistent system. VXL is written in ANSI/ISO C++ and is designed to be portable over many platforms. The core libraries in VXL are:
